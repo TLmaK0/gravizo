@@ -44,4 +44,52 @@ Only need to include image markdown tag with the url [http://www.gravizo.com/g?]
 
 This allow to include your graphs in the README, and still redeable in normal text editor.
 
+Because limitations of the url you can use in markdown, you should use the <a target='_blank' href='http://192.168.2.34/#converter'>Converter</a>  to see more complex graphs:
+
+```
+![Alt text](http://g.gravizo.com/g?
+digraph Vehicles {
+  node [
+    shape = "record"
+  ]
+  edge [
+    arrowtail = "empty"
+  ]
+  Vehicle [
+    label = "{Vehicle|+ model : string%5Cl+ capacity : int%5Cl|+ drive%28%29 : void%5Cl+ canFly%28%29: boolean%5Cl}"
+  ]
+  Motorcycle[
+    label = "{Motorcycle|%5Cl|+ canFly%28%29: boolean%5Cl}"
+  ]
+  Car [
+    label = "{Car|%5Cl|+ canFly%28%29: boolean%5Cl}"
+  ]
+  Vehicle -> Car [dir=back]
+  Vehicle -> Motorcycle [dir=back]
+}
+)
+```
+
+![Alt text](http://g.gravizo.com/g?
+digraph Vehicles {
+  node [
+    shape = "record"
+  ]
+  edge [
+    arrowtail = "empty"
+  ]
+  Vehicle [
+    label = "{Vehicle|+ model : string%5Cl+ capacity : int%5Cl|+ drive%28%29 : void%5Cl+ canFly%28%29: boolean%5Cl}"
+  ]
+  Motorcycle[
+    label = "{Motorcycle|%5Cl|+ canFly%28%29: boolean%5Cl}"
+  ]
+  Car [
+    label = "{Car|%5Cl|+ canFly%28%29: boolean%5Cl}"
+  ]
+  Vehicle -> Car [dir=back]
+  Vehicle -> Motorcycle [dir=back]
+}
+)
+
 
