@@ -3,10 +3,10 @@ gravizo
 
 How to include graphviz graphs in github README.md
 
-Only need to include image markdown tag with the url [http://www.gravizo.com/g?](http://www.gravizo.com/g?) followed by your description graph in [DOT syntax](http://en.wikipedia.org/wiki/DOT_(graph_description_language)) :
+Only need to include image markdown tag with the url [http://g.gravizo.com/g?](http://www.gravizo.com) followed by your description graph in [DOT syntax](http://en.wikipedia.org/wiki/DOT_(graph_description_language)) :
 
 ```html
-![Alt text](http://www.gravizo.com/g?
+![Alt text](http://g.gravizo.com/g?
   digraph G {
     aize ="4,4";
     main [shape=box];
@@ -24,7 +24,7 @@ Only need to include image markdown tag with the url [http://www.gravizo.com/g?]
   }
 )
 ```
-![Alt text](http://www.gravizo.com/g?
+![Alt text](http://g.gravizo.com/g?
   digraph G {
     aize ="4,4";
     main [shape=box];
@@ -44,7 +44,7 @@ Only need to include image markdown tag with the url [http://www.gravizo.com/g?]
 
 This allow to include your graphs in the README, and still redeable in normal text editor.
 
-Because limitations of the url you can use in markdown, you should use the <a target='_blank' href='http://192.168.2.34/#converter'>Converter</a>  to see more complex graphs:
+Because limitations of the url you can use in markdown, you should use the <a target='_blank' href='http://www.gravizor.com/#converter'>Converter</a>  to see more complex graphs:
 
 ```
 ![Alt text](http://g.gravizo.com/g?
