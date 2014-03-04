@@ -44,7 +44,7 @@ Only need to include image markdown tag with the url [http://g.gravizo.com/g?](h
 
 This allow to include your graphs in the README, and still redeable in normal text editor.
 
-Because limitations of the url you can use in markdown, you should use the <a target='_blank' href='http://www.gravizor.com/#converter'>Converter</a>  to see more complex graphs:
+Because limitations of the url you can use in markdown, you should use the <a target='_blank' href='http://www.gravizo.com/#converter'>Converter</a>  to see more complex graphs:
 
 ```
 /**
