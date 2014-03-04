@@ -47,49 +47,126 @@ This allow to include your graphs in the README, and still redeable in normal te
 Because limitations of the url you can use in markdown, you should use the <a target='_blank' href='http://www.gravizor.com/#converter'>Converter</a>  to see more complex graphs:
 
 ```
-![Alt text](http://g.gravizo.com/g?
-digraph Vehicles {
-  node [
-    shape = "record"
-  ]
-  edge [
-    arrowtail = "empty"
-  ]
-  Vehicle [
-    label = "{Vehicle|+ model : string%5Cl+ capacity : int%5Cl|+ drive%28%29 : void%5Cl+ canFly%28%29: boolean%5Cl}"
-  ]
-  Motorcycle[
-    label = "{Motorcycle|%5Cl|+ canFly%28%29: boolean%5Cl}"
-  ]
-  Car [
-    label = "{Car|%5Cl|+ canFly%28%29: boolean%5Cl}"
-  ]
-  Vehicle -> Car [dir=back]
-  Vehicle -> Motorcycle [dir=back]
+/**
+*@hidden
+*@opt nodefontcolor "blue"
+*/
+class UMLNoteOptions{}
+/**
+*Structural Things
+*@opt commentname
+*@note Notes can
+*be extended to
+*span multiple lines
+*/
+class Structural{}
+/**
+*spelling.java
+*@opt shape component
+*@opt commentname
+*@note Component
+*/
+class Component extends Structural{}
+/** @opt shape node */
+class Node extends Structural{}
+/**
+*Chain of
+*responsibility
+*@opt shape collaboration
+*@opt commentname
+*@note Collaboration
+*/
+class Collaboration extends Structural{}
+/**
+*Place order
+*@opt shape usecase
+*@opt commentname
+*@note Use Case
+*/
+class UseCase extends Structural{}
+/**
+*Business rules
+*@opt shape package
+*@opt commentname
+*@note Package
+*/
+class Package{}
+/**
+*@opt all
+*@note Class
+*/
+class Counter extends Structural {
+static public int counter;
+public int getCounter%28%29;
 }
+/**
+*@opt shape activeclass
+*@opt all
+*@note Active Class
+*/
+class RunningCounter extends Counter{}
 )
 ```
 
 ![Alt text](http://g.gravizo.com/g?
-digraph Vehicles {
-  node [
-    shape = "record"
-  ]
-  edge [
-    arrowtail = "empty"
-  ]
-  Vehicle [
-    label = "{Vehicle|+ model : string%5Cl+ capacity : int%5Cl|+ drive%28%29 : void%5Cl+ canFly%28%29: boolean%5Cl}"
-  ]
-  Motorcycle[
-    label = "{Motorcycle|%5Cl|+ canFly%28%29: boolean%5Cl}"
-  ]
-  Car [
-    label = "{Car|%5Cl|+ canFly%28%29: boolean%5Cl}"
-  ]
-  Vehicle -> Car [dir=back]
-  Vehicle -> Motorcycle [dir=back]
+/**
+*@hidden
+*@opt nodefontcolor "blue"
+*/
+class UMLNoteOptions{}
+/**
+*Structural Things
+*@opt commentname
+*@note Notes can
+*be extended to
+*span multiple lines
+*/
+class Structural{}
+/**
+*spelling.java
+*@opt shape component
+*@opt commentname
+*@note Component
+*/
+class Component extends Structural{}
+/** @opt shape node */
+class Node extends Structural{}
+/**
+*Chain of
+*responsibility
+*@opt shape collaboration
+*@opt commentname
+*@note Collaboration
+*/
+class Collaboration extends Structural{}
+/**
+*Place order
+*@opt shape usecase
+*@opt commentname
+*@note Use Case
+*/
+class UseCase extends Structural{}
+/**
+*Business rules
+*@opt shape package
+*@opt commentname
+*@note Package
+*/
+class Package{}
+/**
+*@opt all
+*@note Class
+*/
+class Counter extends Structural {
+static public int counter;
+public int getCounter%28%29;
 }
+/**
+*@opt shape activeclass
+*@opt all
+*@note Active Class
+*/
+class RunningCounter extends Counter{}
 )
 
 
