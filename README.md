@@ -13,7 +13,7 @@ Only need to include image markdown tag with the url [http://g.gravizo.com/g?](h
     parse -> execute;
     main -> init [style=dotted];
     main -> cleanup;
-    execute -> { make_string; printf}
+    execute -> { make_string; printf};
     init -> make_string;
     edge [color=red];
     main -> printf [style=bold,label="100 times"];
@@ -32,7 +32,7 @@ Only need to include image markdown tag with the url [http://g.gravizo.com/g?](h
     parse -> execute;
     main -> init [style=dotted];
     main -> cleanup;
-    execute -> { make_string; printf}
+    execute -> { make_string; printf};
     init -> make_string;
     edge [color=red];
     main -> printf [style=bold,label="100 times"];
