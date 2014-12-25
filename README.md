@@ -141,5 +141,6 @@ deactivate B;
 A --> User: Done;
 deactivate A;
 @enduml
+)
 ```
 
