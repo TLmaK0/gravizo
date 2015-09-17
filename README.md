@@ -46,8 +46,8 @@ This allow to include your graphs in the README, and still redeable in normal te
 
 Because limitations of the url you can use in markdown, you should use the <a target='_blank' href='http://www.gravizo.com/#converter'>Converter</a>  to see more complex graphs:
 
-![Alt text](http://g.gravizo.com/g?
-/**
+![Alt text](https://g.gravizo.com/g?
+/** 
 *Structural Things
 *@opt commentname
 *@note Notes can
