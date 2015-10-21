@@ -3,7 +3,7 @@ gravizo
 
 How to include graphviz graphs in github README.md
 
-Only need to include image markdown tag with the url [http://g.gravizo.com/g?](http://www.gravizo.com) followed by your description graph in [DOT syntax](http://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html) or [PlantUML](http://plantuml.sourceforge.net/sequence.html) :
+Only need to include image markdown tag with the url [http://g.gravizo.com/g?](http://www.gravizo.com) followed by your description graph in [DOT syntax](http://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
 
 ![Alt text](http://g.gravizo.com/g?
   digraph G {
