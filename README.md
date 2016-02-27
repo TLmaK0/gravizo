@@ -44,8 +44,29 @@ Only need to include image markdown tag with the url [http://g.gravizo.com/g?](h
 ```
 This allow to include your graphs in the README, and still redeable in normal text editor.
 
-New. The indirect way.
+###New. The indirect way.###
 You can use indirect way to refer a source file as graph description. 
+![Alt text](http://g.gravizo.com/source/custom_mark2?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
+<!---
+custom_mark2
+@startuml
+object Object01
+object Object02
+object Object03
+object Object04
+object Object05
+object Object06
+object Object07
+object Object08
+
+Object01 <|-- Object02
+Object03 *-- Object04
+Object05 o-- "4" Object06
+Object07 .. Object08 : some labels
+@enduml
+custom_mark2
+-->
+
 Use this sintax: ```![Alt text](http://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html comments ```<!--- -->``` to hide the source.
 ```
 ![Alt text](http://g.gravizo.com/source/custom_mark?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
@@ -69,26 +90,7 @@ Object07 .. Object08 : some labels
 custom_mark
 -->
 ```
-![Alt text](http://g.gravizo.com/source/custom_mark2?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
-<!---
-custom_mark2
-@startuml
-object Object01
-object Object02
-object Object03
-object Object04
-object Object05
-object Object06
-object Object07
-object Object08
 
-Object01 <|-- Object02
-Object03 *-- Object04
-Object05 o-- "4" Object06
-Object07 .. Object08 : some labels
-@enduml
-custom_mark2
--->
 
 Because limitations of the url you can use in markdown, you should use the <a target='_blank' href='http://www.gravizo.com/#converter'>Converter</a>  to see more complex graphs:
 
