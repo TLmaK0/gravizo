@@ -46,7 +46,7 @@ This allow to include your graphs in the README, and still redeable in normal te
 
 New. The indirect way.
 You can use indirect way to refer a source file as graph description. 
-Use this sintax: 
+Use this sintax: ```![Alt text](http://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html comments ```<!--- -->``` to hide the source.
 ```
 ![Alt text](http://g.gravizo.com/source/custom_mark?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
 <!---
