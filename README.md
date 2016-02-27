@@ -92,7 +92,7 @@ custom_mark
 ```
 
 
-Because limitations of the url you can use in markdown, you should use the <a target='_blank' href='http://www.gravizo.com/#converter'>Converter</a>  to see more complex graphs:
+Because limitations of the url you can use in direct way (not in indirect way) markdown, you should use the <a target='_blank' href='http://www.gravizo.com/#converter'>Converter</a>  to see more complex graphs:
 
 ![Alt text](https://g.gravizo.com/g?
 /** 
