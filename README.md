@@ -62,7 +62,7 @@ object Object08
 Object01 <|-- Object02
 Object03 *-- Object04
 Object05 o-- "4" Object06
-Object07 .. Object08 : some labels
+Object07 .. Object08 : some labels2
 @enduml
 custom_mark2
 -->
