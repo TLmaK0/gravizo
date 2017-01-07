@@ -3,9 +3,9 @@ gravizo
 
 How to include graphviz graphs in github README.md
 
-Only need to include image markdown tag with the url [http://g.gravizo.com/g?](http://www.gravizo.com) followed by your description graph in [DOT syntax](http://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
+Only need to include image markdown tag with the url [https://g.gravizo.com/g?](https://www.gravizo.com) followed by your description graph in [DOT syntax](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
 
-![Alt text](http://g.gravizo.com/g?
+![Alt text](https://g.gravizo.com/g?
   digraph G {
     aize ="4,4";
     main [shape=box];
@@ -24,7 +24,7 @@ Only need to include image markdown tag with the url [http://g.gravizo.com/g?](h
 )
 
 ```html
-![Alt text](http://g.gravizo.com/g?
+![Alt text](https://g.gravizo.com/g?
   digraph G {
     aize ="4,4";
     main [shape=box];
@@ -44,9 +44,9 @@ Only need to include image markdown tag with the url [http://g.gravizo.com/g?](h
 ```
 This allow to include your graphs in the README, and still redeable in normal text editor.
 
-**SVG output** it's ready. Only need to replace http://g.gravizo.com/g? by http://g.gravizo.com/svg? and http://g.gravizo.com/source? by http://g.gravizo.com/source/svg?
+**SVG output** it's ready. Only need to replace https://g.gravizo.com/g? by https://g.gravizo.com/svg? and https://g.gravizo.com/source? by https://g.gravizo.com/source/svg?
 
-![Alt text](http://g.gravizo.com/svg?
+![Alt text](https://g.gravizo.com/svg?
   digraph G {
     aize ="4,4";
     main [shape=box];
@@ -65,7 +65,7 @@ This allow to include your graphs in the README, and still redeable in normal te
 )
 ###New. The indirect way.###
 You can use indirect way to refer a source file as graph description. 
-![Alt text](http://g.gravizo.com/source/custom_mark2?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
+![Alt text](https://g.gravizo.com/source/custom_mark2?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
 <!---
 custom_mark2
 @startuml
@@ -86,9 +86,9 @@ Object07 .. Object08 : some labels2
 custom_mark2
 -->
 
-Use this sintax: ```![Alt text](http://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html comments ```<!--- -->``` to hide the source.
+Use this sintax: ```![Alt text](https://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html comments ```<!--- -->``` to hide the source.
 ```
-![Alt text](http://g.gravizo.com/source/custom_mark?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
+![Alt text](https://g.gravizo.com/source/custom_mark?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
 <!---
 custom_mark
 @startuml
@@ -111,7 +111,7 @@ custom_mark
 ```
 
 
-Because limitations of the url you can use in direct way (not in indirect way) markdown, you should use the <a target='_blank' href='http://www.gravizo.com/#converter'>Converter</a>  to see more complex graphs:
+Because limitations of the url you can use in direct way (not in indirect way) markdown, you should use the <a target='_blank' href='https://www.gravizo.com/#converter'>Converter</a>  to see more complex graphs:
 
 ![Alt text](https://g.gravizo.com/g?
 /** 
@@ -139,7 +139,7 @@ class RunningCounter extends Counter{}
 )
 
 ```
-![Alt text](http://g.gravizo.com/g?
+![Alt text](https://g.gravizo.com/g?
 /**
 *Structural Things
 *@opt commentname
@@ -167,7 +167,7 @@ class RunningCounter extends Counter{}
 
 A sequence diagram. Note that you need to include ; in each new line:
 
-![Alt text](http://g.gravizo.com/g?
+![Alt text](https://g.gravizo.com/g?
 @startuml;
 actor User;
 participant "First Class" as A;
@@ -189,7 +189,7 @@ deactivate A;
 )
 
 ```
-![Alt text](http://g.gravizo.com/g?
+![Alt text](https://g.gravizo.com/g?
 @startuml;
 actor User;
 participant "First Class" as A;
@@ -213,7 +213,7 @@ deactivate A;
 
 An activity diagram. Note that you need to include ; in each new line:
 
-![Alt text](http://g.gravizo.com/g?
+![Alt text](https://g.gravizo.com/g?
 @startuml;
 %28*%29 --> if "Some Test" then;
   -->[true] "activity 1";
@@ -238,7 +238,7 @@ endif;
 )
 
 ```
-![Alt text](http://g.gravizo.com/g?
+![Alt text](https://g.gravizo.com/g?
 @startuml;
 %28*%29 --> if "Some Test" then;
   -->[true] "activity 1";
@@ -265,7 +265,7 @@ endif;
 
 Now also suports SVG in JSON format:
 
-![Alt text](http://g.gravizo.com/g?
+![Alt text](https://g.gravizo.com/g?
 @gravizosvg
 {"svg": {
 		"@height": "450",
@@ -292,7 +292,7 @@ Now also suports SVG in JSON format:
 )
 
 ```
-![Alt text](http://g.gravizo.com/g?
+![Alt text](https://g.gravizo.com/g?
 @gravizosvg
 {"svg": {
 		"@height": "450",
