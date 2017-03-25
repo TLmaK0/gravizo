@@ -7,8 +7,7 @@ How to include graphviz graphs in github README.md
 You can use indirect way to refer a source file as graph description. 
 Use this sintax: ```![Alt text](https://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html div tag ```<div> </div>``` (some graphs uses --> so don't use html comments) to hide the source followed by your description graph in [DOT syntax](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
 
-![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
-<aasdf>
+![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md
 custom_mark10
   digraph G {
     aize ="4,4";
@@ -26,8 +25,7 @@ custom_mark10
     execute -> compare;
   }
 custom_mark10
-)]
-</aasdf>
+)
 ```
 ![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
 <div>
