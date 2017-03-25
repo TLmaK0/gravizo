@@ -5,7 +5,7 @@ How to include graphviz graphs in github README.md
 
 ###New. The indirect way.###
 You can use indirect way to refer a source file as graph description. 
-Use this sintax: ```![Alt text](https://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html div tag ```<div> </div>``` (some graphs uses --> so don't use html comments) to hide the source followed by your description graph in [DOT syntax](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
+Use this sintax: ```![Alt text](https://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html summary tag ```<details><summary></summary></details>``` (you can use html comments but some graphs uses -->) to hide the source followed by your description graph in [DOT syntax](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
 
 ![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
 <details> 
@@ -28,10 +28,11 @@ custom_mark10
   }
 custom_mark10
 )
-<details>
+</details>
 ```
 ![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
-<div>
+<details> 
+<summary></summary>
 custom_mark10
   digraph G {
     aize ="4,4";
@@ -49,7 +50,8 @@ custom_mark10
     execute -> compare;
   }
 custom_mark10
-</div>
+)
+</details>
 ```
 
 This allows to include your graphs in the README, and still redeable in normal text editor.
