@@ -3,9 +3,16 @@ gravizo
 
 How to include graphviz graphs in github README.md
 
-Only need to include image markdown tag with the url [https://g.gravizo.com/g?](https://www.gravizo.com) followed by your description graph in [DOT syntax](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
+###New. The indirect way.###
+You can use indirect way to refer a source file as graph description. 
+![Alt text](https://g.gravizo.com/source/custom_mark2?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
+ followed by your description graph in [DOT syntax](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
 
-![Alt text](https://g.gravizo.com/g?
+Use this sintax: ```![Alt text](https://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html comments ```<!--- -->``` to hide the source.
+
+![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
+<!---
+custom_mark10
   digraph G {
     aize ="4,4";
     main [shape=box];
@@ -21,7 +28,8 @@ Only need to include image markdown tag with the url [https://g.gravizo.com/g?](
     node [shape=box,style=filled,color=".7 .3 1.0"];
     execute -> compare;
   }
-)
+custom_mark10
+-->
 
 ```html
 ![Alt text](https://g.gravizo.com/g?
