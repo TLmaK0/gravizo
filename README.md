@@ -5,7 +5,7 @@ How to include graphviz graphs in github README.md
 
 ###New. The indirect way.###
 You can use indirect way to refer a source file as graph description. 
-Use this sintax: ```![Alt text](https://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html summary tag ```<details><summary></summary></details>``` (you can use html comments but some graphs uses -->) to hide the source followed by your description graph in [DOT syntax](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
+Use this sintax: ```![Alt text](https://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html comment or summary tag ```<details><summary></summary></details>``` (you can use html comments but some graphs uses -->) to hide the source followed by your description graph in [DOT syntax](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
 
 ![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
 
@@ -65,7 +65,8 @@ This allows to include your graphs in the README, and still redeable in normal t
 **SVG output** it's ready. Only need to replace https://g.gravizo.com/g? by https://g.gravizo.com/svg? and https://g.gravizo.com/source? by https://g.gravizo.com/source/svg?
 
 ![Alt text](https://g.gravizo.com/source/custom_mark11?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
-<div>
+<details> 
+<summary></summary>
 custom_mark11
   digraph G {
     aize ="4,4";
@@ -83,11 +84,12 @@ custom_mark11
     execute -> compare;
   }
 custom_mark11
-</div>
+</details>
 
 ```
 ![Alt text](https://g.gravizo.com/source/custom_mark11?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
-<div>
+<details> 
+<summary></summary>
 custom_mark11
   digraph G {
     aize ="4,4";
@@ -105,11 +107,12 @@ custom_mark11
     execute -> compare;
   }
 custom_mark11
-</div>
+</details>
 ```
 
 ![Alt text](https://g.gravizo.com/source/custom_mark12?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
-<div>
+<details> 
+<summary></summary>
 custom_mark12
 /** 
 *Structural Things
@@ -135,10 +138,11 @@ class Counter extends Structural {
 class RunningCounter extends Counter{}
 )
 custom_mark12
-</div>
+</details>
 ```
 ![Alt text](https://g.gravizo.com/source/custom_mark12?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
-<div>
+<details> 
+<summary></summary>
 custom_mark12
 /** 
 *Structural Things
@@ -164,13 +168,14 @@ class Counter extends Structural {
 class RunningCounter extends Counter{}
 )
 custom_mark12
-</div>
+</details>
 ```
 
 A sequence diagram. Note that you need to include ; in each new line:
 
 ![Alt text](https://g.gravizo.com/source/custom_mark13?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
-<div>
+<details> 
+<summary></summary>
 custom_mark13
 @startuml;
 actor User;
@@ -191,7 +196,7 @@ A -> User: Done;
 deactivate A;
 @enduml
 custom_mark13
-</div>
+</details>
 
 ```
 ![Alt text](https://g.gravizo.com/source/custom_mark13?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
@@ -222,7 +227,8 @@ custom_mark13
 An activity diagram. Note that you need to include ; in each new line:
 
 ![Alt text](https://g.gravizo.com/source/custom_activity?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
-<div>
+<details> 
+<summary></summary>
 custom_activity
 @startuml;
 %28*%29 --> if "Some Test" then;
@@ -246,11 +252,12 @@ else;
 endif;
 @enduml
 custom_activity
-</div>
+</details>
 
 ```
 ![Alt text](https://g.gravizo.com/source/custom_activity?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
-<div>
+<details> 
+<summary></summary>
 custom_activity
 @startuml;
 %28*%29 --> if "Some Test" then;
@@ -274,13 +281,14 @@ else;
 endif;
 @enduml
 custom_activity
-</div>
+</details>
 ```
 
 Now also suports SVG in JSON format:
 
 ![Alt text](https://g.gravizo.com/source/custom_svg?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
-<div>
+<details> 
+<summary></summary>
 custom_svg
 @gravizosvg
 {"svg": {
@@ -307,11 +315,12 @@ custom_svg
 }
 )
 custom_svg
-</div>
+</details>
 
 ```
 ![Alt text](https://g.gravizo.com/source/custom_svg?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
-<div>
+<details> 
+<summary></summary>
 custom_svg
 @gravizosvg
 {"svg": {
@@ -338,5 +347,5 @@ custom_svg
 }
 )
 custom_svg
-</div>
+</details>
 ```
