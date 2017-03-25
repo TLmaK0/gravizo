@@ -3,8 +3,9 @@ gravizo
 
 How to include graphviz graphs in github README.md
 
-###New. The indirect way.###
+### New. The indirect way ###
 You can use indirect way to refer a source file as graph description. 
+
 Use this sintax: ```![Alt text](https://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html comment or summary tag ```<details><summary></summary></details>``` (you can use html comments but some graphs uses -->) to hide the source followed by your description graph in [DOT syntax](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
 
 ![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
@@ -60,7 +61,7 @@ This allows to include your graphs in the README, and still redeable in normal t
 
 **SVG output** it's ready. Only need to replace https://g.gravizo.com/g? by https://g.gravizo.com/svg? and https://g.gravizo.com/source? by https://g.gravizo.com/source/svg?
 
-![Alt text](https://g.gravizo.com/source/custom_mark12?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md?2)
+![Alt text](https://g.gravizo.com/source/custom_mark12?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md?3)
 
 <details> 
 <summary></summary>
@@ -87,7 +88,6 @@ class Counter extends Structural {
 *@note Active Class
 */
 class RunningCounter extends Counter{}
-)
 custom_mark12
 </details>
 
