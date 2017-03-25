@@ -5,10 +5,7 @@ How to include graphviz graphs in github README.md
 
 ###New. The indirect way.###
 You can use indirect way to refer a source file as graph description. 
-![Alt text](https://g.gravizo.com/source/custom_mark2?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
- followed by your description graph in [DOT syntax](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
-
-Use this sintax: ```![Alt text](https://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html comments ```<!--- -->``` to hide the source.
+Use this sintax: ```![Alt text](https://g.gravizo.com/source/<custom_mark>?<url_source_url_encoded>```). And use html comments ```<!--- -->``` to hide the source followed by your description graph in [DOT syntax](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), [UMLGraph](http://www.umlgraph.org/doc/cd-intro.html), [PlantUML](http://plantuml.sourceforge.net/sequence.html) or [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) :
 
 ![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
 <!---
@@ -31,8 +28,10 @@ custom_mark10
 custom_mark10
 -->
 
-```html
-![Alt text](https://g.gravizo.com/g?
+```
+![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Ffix%2FREADME%2FREADME.md)
+<!---
+custom_mark10
   digraph G {
     aize ="4,4";
     main [shape=box];
@@ -48,9 +47,11 @@ custom_mark10
     node [shape=box,style=filled,color=".7 .3 1.0"];
     execute -> compare;
   }
-)
+custom_mark10
+-->
 ```
-This allow to include your graphs in the README, and still redeable in normal text editor.
+
+This allows to include your graphs in the README, and still redeable in normal text editor.
 
 **SVG output** it's ready. Only need to replace https://g.gravizo.com/g? by https://g.gravizo.com/svg? and https://g.gravizo.com/source? by https://g.gravizo.com/source/svg?
 
