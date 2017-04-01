@@ -241,6 +241,7 @@ custom_activity
 Now also suports SVG in JSON format:
 
 ![Alt text](https://g.gravizo.com/source/custom_svg?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md?1)
+
 <details> 
 <summary></summary>
 custom_svg
@@ -267,7 +268,6 @@ custom_svg
 		]
 	}
 }
-)
 custom_svg
 </details>
 
@@ -299,7 +299,6 @@ custom_svg
 		]
 	}
 }
-)
 custom_svg
 </details>
 ```
