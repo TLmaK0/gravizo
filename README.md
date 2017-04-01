@@ -64,7 +64,7 @@ This allows to include your graphs in the README, and still redeable in normal t
 <details> 
 <summary></summary>
 custom_mark12
-/** 
+/**
 *Structural Things
 *@opt commentname
 *@note Notes can
@@ -72,14 +72,16 @@ custom_mark12
 *span multiple lines
 */
 class Structural{}
+
 /**
 *@opt all
 *@note Class
 */
 class Counter extends Structural {
         static public int counter;
-        public int getCounter%28%29;
+        public int getCounter();
 }
+
 /**
 *@opt shape activeclass
 *@opt all
@@ -94,7 +96,7 @@ custom_mark12
 <details> 
 <summary></summary>
 custom_mark12
-/** 
+/**
 *Structural Things
 *@opt commentname
 *@note Notes can
@@ -102,14 +104,16 @@ custom_mark12
 *span multiple lines
 */
 class Structural{}
+
 /**
 *@opt all
 *@note Class
 */
 class Counter extends Structural {
         static public int counter;
-        public int getCounter{};
+        public int getCounter();
 }
+
 /**
 *@opt shape activeclass
 *@opt all
