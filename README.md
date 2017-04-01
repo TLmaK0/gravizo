@@ -29,7 +29,6 @@ custom_mark10
     execute -> compare;
   }
 custom_mark10
-)
 </details>
 
 ```
