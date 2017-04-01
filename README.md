@@ -110,7 +110,7 @@ class Structural{}
 */
 class Counter extends Structural {
         static public int counter;
-        public int getCounter%28%29;
+        public int getCounter{};
 }
 /**
 *@opt shape activeclass
@@ -118,7 +118,6 @@ class Counter extends Structural {
 *@note Active Class
 */
 class RunningCounter extends Counter{}
-)
 custom_mark12
 </details>
 ```
