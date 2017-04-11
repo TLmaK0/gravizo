@@ -5,13 +5,6 @@
 custom_mark10
 @startuml;
 User -> A: GET /relay/{key};
-activate A;
-A -> B: GET /store/{key};
-activate B;
-B -> A: {"key":"{key}", "value":"{value}"};
-deactivate B;
-A -> User:  {"key":"{key}", "value":"{value}"};
-deactivate A;
 @enduml
 custom_mark10
 </details>
