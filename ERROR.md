@@ -19,7 +19,6 @@ deactivate B;
 
 A -> User:  {"key":"{key}", "value":"{value}"};
 deactivate A;
-
 @enduml
 custom_mark10
 </details>
