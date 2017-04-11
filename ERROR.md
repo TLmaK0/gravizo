@@ -4,7 +4,7 @@
 <summary></summary>
 custom_mark10
 @startuml;
-User -> A: GET /relay/key};
+User -> A: GET /relay/key;
 @enduml
 custom_mark10
 </details>
