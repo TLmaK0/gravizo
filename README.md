@@ -14,7 +14,7 @@ Use this syntax: ```![Alt text](https://g.gravizo.com/source/<custom_mark>?<url_
 <summary></summary>
 custom_mark10
   digraph G {
-    aize ="4,4";
+    size ="4,4";
     main [shape=box];
     main -> parse [weight=8];
     parse -> execute;
@@ -37,7 +37,7 @@ custom_mark10
 <summary></summary>
 custom_mark10
   digraph G {
-    aize ="4,4";
+    size ="4,4";
     main [shape=box];
     main -> parse [weight=8];
     parse -> execute;
