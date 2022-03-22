@@ -36,12 +36,12 @@ custom_mark21
 custom_mark21	
 @startuml
 start
-:init;
--> test of color;
+:init;;
+-> test of color;;
 if (color?) is (<color:red>red) then
-:print red;
+:print red;;
 else 
-:print not red;
+:print not red;;
 note right: no color
 endif
 partition End {
