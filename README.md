@@ -258,7 +258,7 @@ An activity diagram. Note that you need to include `;` at the end of each line:
 <summary></summary>
 custom_activity
 @startuml
-%28*%29 --> if "Some Test" then
+(*) --> if "Some Test" then
   -->[true] "activity 1"
   if "" then
     -> "activity 3" as a3
@@ -287,7 +287,7 @@ custom_activity
 <summary></summary>
 custom_activity
 @startuml;
-%28*%29 --> if "Some Test" then
+(*) --> if "Some Test" then
   -->[true] "activity 1"
   if "" then
     -> "activity 3" as a3
